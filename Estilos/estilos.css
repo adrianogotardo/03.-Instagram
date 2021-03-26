@@ -53,6 +53,7 @@
     background-color: #fafafa;
     text-align: center;
     box-sizing: border-box;
+    color: #cecece;
 }
 .icones {
     display: flex;
@@ -79,7 +80,7 @@
     margin-top: 34px;
     background-color: #ffffff;
     border: 1px solid #DBDBDB;
-    border-radius: 5px;
+    border-radius: 3px;
     position: relative;
 }
 button {
@@ -162,8 +163,8 @@ button {
     height: 61px;
     background-color: #ffffff;
     border: 1px solid #DBDBDB;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
 .usuario {
     display: flex;
@@ -196,8 +197,8 @@ button {
     height: 76px;
     background-color: #ffffff;
     border: 1px solid #dbdbdb;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 .likes, .sugestao, .roboto-14p {
     font-family: 'Roboto', sans-serif;
@@ -404,20 +405,23 @@ button {
         margin-right: 20px;
         justify-content: flex-end;
     }
-    .icones ion-icon:nth-child(2) {
+    .icones a:nth-child(2) {
         display: none;
     }
-    .icones ion-icon:nth-child(3) {
+    .icones a:nth-child(3) {
         display: none;
     }
-    .icones ion-icon:nth-child(4) {
+    .icones a:nth-child(4) {
         display: none;
     }
     .stories {
         margin-top: 0px;
         background: rgba(0, 0, 0, 0);
         border: 0px solid #DBDBDB;
-        border-radius: 5px;
+        border-radius: 3px;
+    }
+    .stories button {
+        display: none;
     }
     .posts {
         margin-top: 0px;
