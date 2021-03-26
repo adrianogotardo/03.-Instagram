@@ -13,6 +13,11 @@
     z-index: 10;
     box-shadow: 0 0 8px rgb(214, 214, 214);
 }
+.logo-mobile {
+    display: none;
+    height: 22px;
+    width: 103px;
+}
 .logo {
     width: 145px;
     display: flex;
@@ -264,4 +269,98 @@
 .sugestao-user-name {
     width: 109px;
     height: auto;
+}
+
+/* ---------- RESPONSIVO 935PX ---------- */
+@media screen and (max-width: 935px) {
+    .menu-lateral {
+        display: none;
+    }
+    .topo {
+        justify-content: space-between;
+    }
+    .logo {
+        margin-left: 20px;
+    }
+    .icones {
+        margin-right: 20px;
+    }
+}
+
+/* ---------- RESPONSIVO 614PX ---------- */
+@media screen and (max-width: 614px) {
+    .topo {
+        width: 100vw;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+    }
+    .feed {
+        width: 100vw;
+    }
+    .stories {
+        width: calc(100vw - 2px);
+    }
+    .caixa-post {
+        width: 100vw;
+        height: auto;
+    }
+    .cabecalho {
+        width: calc(100vw - 2px);
+    }
+    .post-img {
+        width: 100vw;
+        height: auto;
+    }
+    .rodape {
+        width: 100vw;
+    }
+    .menu-lateral {
+        display: none;
+    }
+    .topo {
+        justify-content: space-between;
+    }
+    .logo {
+        margin-left: 20px;
+        width: auto;
+    }
+    .logo img {
+        display: none;
+    }
+    .logo div {
+        display: none;
+    }
+    .logo-mobile {
+        display: block;
+    }
+    .busca {
+        display: none;
+    }
+    .icones {
+        width: auto;
+        margin-right: 20px;
+        justify-content: flex-end;
+    }
+    .icones ion-icon:nth-child(2) {
+        display: none;
+    }
+    .icones ion-icon:nth-child(3) {
+        display: none;
+    }
+    .icones ion-icon:nth-child(4) {
+        display: none;
+    }
+    .stories {
+        margin-top: 0px;
+        background: rgba(0, 0, 0, 0);
+        border: 0px solid #DBDBDB;
+        border-radius: 5px;
+    }
+    .posts {
+        margin-top: 0px;
+    }
+    .posts div:first-child {
+        margin-top: 0px;
+    }
 }
